@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(234, 248, 249);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    background: #fec3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 40px;
+  
+   
+   }
+ 
+   .Mainbar a{
+     transition: .4s;
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin: 4px;
+     padding: 4px;
+     text-decoration: none;
+     font-family: 'Baloo', cursive;
+    
+   }
+ 
+   .Mainbar a:hover{
+     color: #ff6969;
+   }
+
+   .expected-content{
+    padding-top: 100px;
+    padding-left: 20px;
+    
+   }
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between; 
+    
+}
+.video_title_continer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.course_title_info {
+    flex: 1;
+    padding-left: 30px;
+}
+.course_title_info{
+   font-size: 30px;
+   font-weight: bolder;
+}
+.course_attraction{
+    font-size: 17px;
+    color: rgb(125, 125, 125);
+}
+
+.video-container {
+    flex: 1;
+    padding: 18px;
+    padding-top: 38px;
+   
+}
+.video-with-border {
+    border: 1px solid #fec3c3;
+    border-width: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+.course-list ul {
+    list-style: none;
+    display: flex; /* Make the list items display horizontally */
+}
+
+.course-list ul li {
+    margin-right: 10px;
+}
+
+.course-details div {
+    display: none;
+    
+}
+
+#goals:target, #content:target, #duration:target, #instructor:target,#RequireAge:target{
+    display: block;
+}
+
+#courseDetails {
+    list-style: none; /* Remove the default list styles */
+    
+    display: flex; /* Make the list items display horizontally */
+}
+
+#courseDetails li {
+    font-family: 'Baloo', cursive;
+    margin: 0px;
+    border: 3px solid rgb(255, 172, 172);
+    border-radius: 0px;
+    background: white;
+    padding: 15px;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color change */
+}
+
+h4 {
+    padding-top: 30px;
+   
+    font-size: 30px;
+}
+
+
+#courseDetails li:hover {
+    border-color: pink;
+    border-width: 10px; /* Increase border width on hover */
+}
+#courseDetails li a {
+    text-decoration: none; 
+}
+
+ h5 {
+    padding-left: 30px;
+}
+
+
+#goals ul li {
+    padding: 10px; 
+}
+
+#content ul li {
+    padding: 10px; 
+}
+
+#instructor ul li {
+    padding: 10px; 
+}
+
+#RequireAge ul li {
+    padding: 10px; 
+}
+
+#enrollForm button {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(254, 255, 232);
+    padding: 15px;
+    border: 2px solid pink;
+    cursor: pointer;
+    color: rgb(255, 196, 196);
+    margin: 10px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 60px; /* Center the text vertically */
+    font-family: 'Baloo', cursive;
+    
+}
+#enrollForm button:hover {
+    background-color: #ffa1a1;
+    color: white; /* Change text color on hover */
+}

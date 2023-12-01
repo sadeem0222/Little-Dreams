@@ -1,0 +1,619 @@
+
+
+
+body {
+    
+    background: url('../Media/WhatsApp Image 2023-11-09 at 12.43.58_1928b748.jpg') ;
+   
+}
+
+
+
+   .expected-content{
+    padding-top: 100px;
+    padding-left: 20px;
+    text-decoration: underline;
+    
+   }
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between; 
+    
+
+    
+}
+.video_title_continer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.course_title_info {
+    flex: 1;
+    padding-left: 20px;
+}
+.course_title_info{
+   padding-top: 90px;
+   font-size: 30px;
+   font-weight: bolder;
+}
+.course_attraction{
+    font-size: 17px;
+    color: rgb(124, 101, 101);
+
+}
+
+.video-container {
+    flex: 1;
+    padding: 18px;
+    padding-top: 38px;
+   
+}
+.video-with-border {
+    border: 1px solid #fec3c3;
+    border-width: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+.course-list ul {
+    list-style: none;
+    display: flex; /* Make the list items display horizontally */
+}
+
+.course-list ul li {
+    margin-right: 10px;
+}
+.course-details {
+    border: 10px solid rgba(255, 255, 255, 0.1); /* Adjust the alpha value for transparency (0 is fully transparent, 1 is fully opaque) */
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value for transparency */
+    padding: 20px; /* Add padding for better appearance */
+    margin: 0 auto; /* Center the div horizontally */
+}
+.course-details div {
+    display: none;
+    
+}
+
+#goals:target, #content:target, #duration:target, #instructor:target,#RequireAge:target{
+    display: block;
+}
+
+#courseDetails {
+    list-style: none; 
+    justify-content: center;
+    display: flex; /* Make the list items display horizontally */
+}
+
+#courseDetails li {
+    font-family: 'Baloo', cursive;
+    margin: 40px;
+    border: 3px solid rgb(255, 172, 172);
+    border-radius: 10px;
+    background: white;
+    padding: 15px;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color change */
+}
+
+h4 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#courseDetails li:hover {
+    border-color: pink;
+    border-width: 10px; /* Increase border width on hover */
+}
+#courseDetails li a {
+    text-decoration: none; 
+    color: pink;
+}
+
+ h5 {
+    padding-left: 10px;
+}
+
+
+#goals ul li {
+    padding: 10px; 
+}
+
+#content ul li {
+    padding: 10px; 
+}
+
+#instructor ul li {
+    padding: 10px; 
+}
+
+#RequireAge ul li {
+    padding: 10px; 
+}
+
+.enroll-link {
+    color: pink;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    border: 2px solid pink;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Baloo', cursive;
+}
+
+.enroll-link:hover {
+    background-color: #ffa1a1;
+    color: white;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    font-family: 'Baloo',cursive;
+ }
+ nav{
+    background: linear-gradient(to left,#F89B9E,#C9D9FF);
+    padding: 5px 20px;
+    font-weight: bold;
+ }
+ ul{
+    list-style-type: none;
+ }
+ nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ }
+ a:hover{
+    text-decoration: underline;
+ }
+ .menu li{
+    font-size:16px;
+    padding: 15px 5px;
+ }
+ .menu li a{
+    display: block;
+ }
+ .logo a{
+    font-size: 20px;
+ }
+ .button.secondary{
+    border-bottom: 1px #444 solid;
+ }
+ .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .toggle{
+    order:1;
+ }
+ .item.button{
+    order:2;
+ }
+ .item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+ }
+ .item.active{
+    display: block;
+ }
+ .toggle{
+    cursor:pointer;
+ }
+ .bars{
+    background: #999;
+    display: inline-block;
+    height:2px;
+    position: relative;
+    width: 18px;
+ }
+ .bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height:2px;
+    position: absolute;
+    width: 18px;    
+ }
+ .bars::before{
+    top:5px
+ }
+ .bars::after{
+    top: -5px;
+ }
+ @media  all and (min-width:468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order:1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: #c9d9ffd0;
+        border: 1px solid #C9D9FF;
+        border-radius: 50em;
+    }
+    .button.secondary a{
+        background: transparent;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #c9d9ffd0;
+        border-color: #C9D9FF;
+    }
+    .button.secondary a:hover{
+        color: #ddd;
+    }
+ }
+ 
+ footer{
+    background:linear-gradient(to left,#F89B9E,#C9D9FF);
+    font-weight: bold;
+ }
+ .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+ }
+ .socialIcon{
+    display: flex;
+    justify-content: center;
+ }
+ .socialIcon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50px;
+ }
+ .socialIcon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+ }
+ .socialIcon a:hover{
+    background-color: #111;
+    transition: 0.5s;
+ }
+ .socialIcon a:hover i{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+ }
+ .footerNav{
+    margin: 30px 0;
+ } 
+ .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+ }
+ .footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+ }
+ .footerNav ul li a:hover{
+    opacity: 1;
+ }
+ 
+ @media all and (min-width: 768px){
+ 
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+ }
+ @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcon a{
+        padding: 5px;
+        margin:5px;}
+ }
+
+
+
+ @media (max-width: 576px) {
+
+    .course_title_info {
+        font-size: 20px; /* Adjust the font size as needed */
+        padding-top: 30px; /* Adjust the padding as needed */
+    }
+
+    #enrollForm button {
+        font-size: 16px;
+        width: 70px; /* Adjust the width as needed */
+        height: 70px; /* Adjust the height as needed */
+        line-height: 50px; /* Adjust the line height as needed */
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .course_attraction {
+        font-size: 14px;
+    }
+
+    #courseDetails li {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+        display: inline-block;
+    }
+
+    #courseDetails {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .content-container {
+        padding-top: 10px;
+    }
+
+    .course_attraction {
+        font-size: 12px;
+    }
+
+    .video-container {
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    .video-with-border {
+        border-width: 5px;
+    }
+
+    .course-list ul li {
+        margin-right: 3px;
+    }
+
+    #courseDetails li {
+        margin: 5px;
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    h4 {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #enrollForm button {
+        font-size: 8px;
+        width: 40px;
+        height: 40px;
+        line-height: 20px;
+    }
+
+    .footerContainer {
+        padding: 20px 10px 5px;
+    }
+
+    .footerNav ul li a {
+        margin: 5px;
+        font-size: 0.8em;
+    }
+}
+
+ @media (max-width: 576px) {
+
+    .course_title_info {
+        font-size: 20px; /* Adjust the font size as needed */
+        padding-top: 30px; /* Adjust the padding as needed */
+    }
+
+    #enrollForm button {
+        font-size: 16px;
+        width: 70px; /* Adjust the width as needed */
+        height: 70px; /* Adjust the height as needed */
+        line-height: 50px; /* Adjust the line height as needed */
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .course_attraction {
+        font-size: 14px;
+    }
+
+    #courseDetails li {
+        margin: 5px;
+        padding: 5px;
+        font-size: 10px;
+        display: inline-block;
+    }
+
+    #courseDetails {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .content-container {
+        padding-top: 10px;
+    }
+
+    .course_attraction {
+        font-size: 12px;
+    }
+
+    .video-container {
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    .video-with-border {
+        border-width: 5px;
+    }
+
+    .course-list ul li {
+        margin-right: 3px;
+    }
+
+    #courseDetails li {
+        margin: 5px;
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    h4 {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #enrollForm button {
+        font-size: 8px;
+        width: 40px;
+        height: 40px;
+        line-height: 20px;
+    }
+
+    .footerContainer {
+        padding: 20px 10px 5px;
+    }
+
+    .footerNav ul li a {
+        margin: 5px;
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .course_title_info {
+        font-size: 25px; /* Adjust the font size as needed */
+        padding-top: 20px; /* Adjust the padding as needed */
+    }
+
+    #enrollForm button {
+        font-size: 18px;
+        width: 80px; /* Adjust the width as needed */
+        height: 80px; /* Adjust the height as needed */
+        line-height: 60px; /* Adjust the line height as needed */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .course_attraction {
+        font-size: 16px;
+    }
+
+    #courseDetails li {
+        margin: 8px;
+        padding: 8px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    #courseDetails {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .content-container {
+        padding-top: 15px;
+    }
+
+    .course_attraction {
+        font-size: 14px;
+    }
+
+    .video-container {
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .video-with-border {
+        border-width: 8px;
+    }
+
+    .course-list ul li {
+        margin-right: 5px;
+    }
+
+    #courseDetails li {
+        margin: 8px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    h4 {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+
+    #enrollForm button {
+        font-size: 14px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+    }
+
+    .footerContainer {
+        padding: 30px 15px 10px;
+    }
+
+    .footerNav ul li a {
+        margin: 10px;
+        font-size: 1em;
+    }
+}
+

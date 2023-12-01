@@ -1,0 +1,61 @@
+@import url('https://fonts.googlepis.com/css? family=Poppins:wght@300;400;500;600;700;800;900& display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ .activity_section{
+    margin-top: 200px;
+    margin-bottom: 250px;
+   
+ }
+ .Allactivity{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+
+ }
+ .activity_container {
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+    width: 320px;
+    height: 430px; 
+    margin: 0.5rem;
+ }
+ .worksheet{
+    background: linear-gradient(to left,rgb(230, 235, 245),rgb(187, 204, 220), rgb(173, 222, 236));
+ }
+ .diy{
+    background: linear-gradient(to left, rgb(220, 244, 234),rgb(163, 202, 186),rgb(129, 161, 147));
+ }
+ .activity{
+    background: linear-gradient(to left, rgb(244, 236, 220),rgb(218, 199, 162),rgb(221, 208, 180));
+ }
+ .activity_info{
+    padding: 15px 20px;
+    text-align: left;
+    width: 320px;
+ }
+ .activity_info h2{
+    margin-bottom: 15px;
+ }
+ .activity_container img{
+    height: 250px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    
+ }
+ .activity_container:hover {
+    transform: translateY(-15px);
+ }
+
+
+
+ 
